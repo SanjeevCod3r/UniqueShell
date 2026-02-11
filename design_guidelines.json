@@ -1,0 +1,164 @@
+{
+  "identity": {
+    "name": "Unique Shell Mould",
+    "archetype": "Industrial Forge",
+    "vibe": "Robust, Precise, Molten, Dark Mode Utility",
+    "emotional_tone": "Reliability, Heat, Strength, Efficiency",
+    "theme_mode": "dark"
+  },
+  "typography": {
+    "fonts": {
+      "heading": "Oswald, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "weights": {
+      "heading": "700",
+      "subheading": "500",
+      "body": "400",
+      "bold": "600"
+    },
+    "sizes": {
+      "h1": "text-4xl md:text-5xl tracking-tight uppercase",
+      "h2": "text-3xl tracking-tight uppercase",
+      "h3": "text-2xl tracking-normal uppercase",
+      "body": "text-base leading-relaxed",
+      "small": "text-sm text-slate-400",
+      "tiny": "text-xs uppercase tracking-wider text-slate-500"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#0f172a",
+      "secondary": "#1e293b",
+      "tertiary": "#334155",
+      "overlay": "rgba(15, 23, 42, 0.8)"
+    },
+    "text": {
+      "primary": "#f8fafc",
+      "secondary": "#94a3b8",
+      "muted": "#64748b",
+      "inverse": "#0f172a"
+    },
+    "accent": {
+      "primary": "#f97316",
+      "secondary": "#ea580c",
+      "hover": "#fb923c",
+      "glow": "0 0 20px rgba(249, 115, 22, 0.3)"
+    },
+    "status": {
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444",
+      "info": "#3b82f6",
+      "neutral": "#64748b"
+    },
+    "border": {
+      "default": "#334155",
+      "active": "#475569",
+      "focus": "#f97316"
+    }
+  },
+  "layout": {
+    "grid": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+      "form": "grid grid-cols-1 md:grid-cols-2 gap-6",
+      "card_grid": "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+    },
+    "spacing": {
+      "container_padding": "p-6 md:p-8",
+      "section_gap": "gap-8",
+      "element_gap": "gap-4"
+    },
+    "containers": {
+      "main": "max-w-7xl mx-auto w-full",
+      "card": "bg-slate-800 border border-slate-700 rounded-lg shadow-lg overflow-hidden"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded shadow-md transition-all duration-200 uppercase tracking-wide text-sm",
+      "secondary": "bg-slate-700 hover:bg-slate-600 text-white font-medium py-2 px-4 rounded border border-slate-600 transition-all duration-200 text-sm",
+      "danger": "bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded shadow-md transition-all duration-200 text-sm",
+      "ghost": "bg-transparent hover:bg-slate-800 text-slate-300 hover:text-white py-2 px-4 rounded transition-all duration-200 text-sm"
+    },
+    "cards": {
+      "default": "bg-slate-800 border border-slate-700 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300",
+      "highlight": "bg-slate-800 border-l-4 border-orange-500 rounded-r-lg shadow-md"
+    },
+    "inputs": {
+      "default": "bg-slate-900 border border-slate-700 text-white rounded focus:ring-2 focus:ring-orange-500 focus:border-transparent placeholder-slate-500 transition-all duration-200",
+      "label": "block text-sm font-medium text-slate-400 mb-1 uppercase tracking-wide"
+    },
+    "tables": {
+      "header": "bg-slate-900 text-slate-400 uppercase text-xs font-bold tracking-wider py-3 px-4 text-left",
+      "row": "border-b border-slate-700 hover:bg-slate-700/50 transition-colors duration-150",
+      "cell": "py-3 px-4 text-sm text-slate-300"
+    },
+    "badges": {
+      "base": "inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium uppercase tracking-wide",
+      "success": "bg-emerald-900/50 text-emerald-400 border border-emerald-800",
+      "warning": "bg-amber-900/50 text-amber-400 border border-amber-800",
+      "error": "bg-red-900/50 text-red-400 border border-red-800",
+      "info": "bg-blue-900/50 text-blue-400 border border-blue-800"
+    }
+  },
+  "assets": {
+    "images": {
+      "login_bg": "https://images.unsplash.com/photo-1718386046338-6259e822aa4f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODh8MHwxfHNlYXJjaHwxfHxtb2x0ZW4lMjBzdGVlbCUyMG1ldGFsJTIwZmFjdG9yeSUyMGluZHVzdHJpYWx8ZW58MHx8fHwxNzcwODM5NDk0fDA&ixlib=rb-4.1.0&q=85",
+      "dashboard_hero": "https://images.unsplash.com/photo-1769491188458-2728c8d44628?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxtb2x0ZW4lMjBtZXRhbCUyMHBvdXJpbmclMjBmb3VuZHJ5fGVufDB8fHx8MTc3MDgzOTUxNXww&ixlib=rb-4.1.0&q=85",
+      "factory_texture": "https://images.unsplash.com/photo-1763950865873-41f63536825b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMHBpcGVzJTIwc3RvcmFnZSUyMHdhcmVob3VzZXxlbnwwfHx8fDE3NzA4Mzk1MjB8MA&ixlib=rb-4.1.0&q=85",
+      "worker_avatar_1": "https://images.unsplash.com/photo-1727373203627-73457889fe0f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHxzdGVlbCUyMG1hbnVmYWN0dXJpbmclMjB3b3JrZXIlMjBzYWZldHklMjBnZWFyfGVufDB8fHx8MTc3MDgzOTQ5OXww&ixlib=rb-4.1.0&q=85",
+      "worker_avatar_2": "https://images.unsplash.com/photo-1683470156390-79fc319b7e7a?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHw0fHxzdGVlbCUyMG1hbnVmYWN0dXJpbmclMjB3b3JrZXIlMjBzYWZldHklMjBnZWFyfGVufDB8fHx8MTc3MDgzOTQ5OXww&ixlib=rb-4.1.0&q=85"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-width: 1.5; size: 20px"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "hover_lift": "hover:-translate-y-1 hover:shadow-lg",
+    "fade_in": "animate-in fade-in duration-500",
+    "slide_up": "animate-in slide-in-from-bottom-4 duration-500"
+  },
+  "accessibility": {
+    "contrast": "Ensure text is at least 4.5:1 against background. Use lighter slate (300/400) for secondary text on dark backgrounds.",
+    "focus": "Visible focus ring using orange-500/50 offset-2 ring-2",
+    "aria": "Use aria-labels for icon-only buttons. Ensure form inputs have associated labels."
+  },
+  "instructions_to_main_agent": [
+    "Implement a dark mode ONLY interface. Do not create a light mode toggle.",
+    "Use the 'Oswald' font for all headings to give that industrial, condensed look. Import it from Google Fonts.",
+    "Use 'Inter' for body text for readability.",
+    "The primary accent color is Orange (#f97316) representing molten metal. Use it for primary actions and active states.",
+    "Backgrounds should be deep slate (#0f172a), not pure black.",
+    "Cards should have a subtle border (#334155) to define them against the dark background.",
+    "Use the provided image URLs for the login page background and dashboard widgets where appropriate.",
+    "Ensure all interactive elements have the `data-testid` attribute as requested.",
+    "For charts, use Recharts with a custom tooltip that matches the dark theme (bg-slate-800 border-slate-700).",
+    "Sidebar should be fixed on the left, collapsible on mobile.",
+    "Tables should be dense and allow for quick scanning of data.",
+    "Use 'sonner' for toast notifications, styled with dark background and orange accents."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Dark colors look good when used independently without gradients. DO NOT use dark colors as gradients",
+    "Don't make generic centered layouts, simplistic gradients, and uniform styling.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) sparingly, mainly for overlays.",
+    "You MUST NOT apply universal transition. Eg: `transition: all`. This results in breaking transforms. Always add transitions for specific interactive elements like button, input excluding transforms",
+    "You MUST NOT center align the app container, ie do not add `.App { text-align: center; }` in the css file. This disrupts the human natural reading flow of text",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations & color relevant to the app style",
+    "NEVER: use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯📚🎭🎬🎪🎉🎊🎁🎀🎂🍰🎈🎨🎰💰💵💳🏦💎🪙💸🤑📊📈📉💹🔢🏆🥇 etc for icons.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations. Static = dead.",
+    "Use 2-3x more spacing than feels comfortable. Cramped designs look cheap.",
+    "Subtle grain textures, noise overlays, custom cursors, selection states, and loading animations: separates good from extraordinary.",
+    "Main agent relies on these image URLs. Missing categories (especially sponsor logos) = main agent will use placeholder text which is FORBIDDEN",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Create new components that match the style and conventions of existing components when needed",
+    "Examine existing components to understand the project's component patterns before creating new ones",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use `sonner` for toasts. Sonner component are located in `/app/src/components/ui/sonner.tsx`"
+  ]
+}
