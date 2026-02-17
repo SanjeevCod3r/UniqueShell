@@ -39,25 +39,9 @@ export default function ViewGraph() {
 
   const chartData = batches.slice(0, 10).map(batch => ({
     name: batch.batch_name,
-    'Raw Material (kg)': batch.raw_material_qty,
-    'Output (kg)': batch.output_qty,
+    rawMaterial: batch.raw_material_qty,
+    output: batch.output_qty,
   }));
-
-  const CustomTooltip = ({ active, payload, label }) => {
-    if (active && payload && payload.length) {
-      return (
-        <div className="bg-slate-800 border border-slate-700 rounded-lg p-3 shadow-lg">
-          <p className="text-white font-bold mb-2">{label}</p>
-          {payload.map((entry, index) => (
-            <p key={index} className="text-sm" style={{ color: entry.color }}>
-              {entry.name}: {entry.value.toLocaleString()} kg
-            </p>
-          ))}
-        </div>
-      );
-    }
-    return null;
-  };
 
   if (loading) {
     return (
@@ -122,14 +106,21 @@ export default function ViewGraph() {
                       stroke="#475569"
                       label={{ value: 'Weight (kg)', angle: -90, position: 'insideLeft', fill: '#94a3b8' }}
                     />
-                    <Tooltip content={<CustomTooltip />} cursor={{ fill: 'rgba(71, 85, 105, 0.2)' }} />
+                    <Tooltip
+                      contentStyle={{
+                        backgroundColor: '#1e293b',
+                        border: '1px solid #334155',
+                        borderRadius: '8px',
+                        color: '#f8fafc'
+                      }}
+                      cursor={{ fill: 'rgba(71, 85, 105, 0.2)' }}
+                    />
                     <Legend
                       wrapperStyle={{ paddingTop: '20px' }}
                       iconType="rect"
-                      formatter={(value) => <span style={{ color: '#f8fafc' }}>{value}</span>}
                     />
-                    <Bar dataKey="Raw Material (kg)" fill="#3b82f6" radius={[4, 4, 0, 0]} />
-                    <Bar dataKey="Output (kg)" fill="#10b981" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="rawMaterial" name="Raw Material (kg)" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+                    <Bar dataKey="output" name="Output (kg)" fill="#10b981" radius={[4, 4, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>
